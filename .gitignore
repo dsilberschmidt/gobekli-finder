@@ -1,0 +1,22 @@
+# Keep the public repo clean of sensitive or heavy data
+data/
+results/
+*.tif
+*.tiff
+*.vrt
+*.zip
+*.7z
+*.tar
+*.gz
+*.geojson
+*.gpkg
+*.kml
+*.kmz
+*.csv
+*.parquet
+*.npz
+*.npy
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+.env

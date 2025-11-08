@@ -1,0 +1,13 @@
+name: gobekli-finder
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - rasterio
+  - numpy
+  - scikit-image
+  - shapely
+  - scipy
+  - pip
+  - pip:
+      - geojson

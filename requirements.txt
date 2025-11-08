@@ -1,0 +1,6 @@
+rasterio
+numpy
+scikit-image
+shapely
+geojson
+scipy
