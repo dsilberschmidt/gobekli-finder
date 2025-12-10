@@ -31,3 +31,56 @@ results/                 # generated outputs (gitignored)
 
 ## Citation
 Silberschmidt, D. (2025). *Göbekli Finder – Remote detection of pre-agricultural megalithic enclosures (v0.1).* MIT License.
+
+---
+
+# Current Status of the Göbekli Finder Project
+
+This repository hosts the **public-facing tools, documentation, and concept notes**
+for the Göbekli Finder project — an exploration of remote-sensing methods for 
+detecting small archaeological mounds.
+
+Göbekli Finder is **not** a finished system.  
+It is a **proof-of-concept series**, each iteration evaluating whether specific 
+datasets and methods can reveal faint geomorphological or vegetation signatures 
+around known archaeological sites.
+
+## PoC 1 (Dec 2025)
+**Region:** Kazanlak Valley (Bulgaria)  
+**Period:** ~2 ka  
+**Data used:** Sentinel-2 (10–20 m), Copernicus DEM 30 m  
+**Objective:** Determine whether publicly available Earth Observation data can 
+detect or hint at Thracian burial mounds (túmulos) known from archaeology.
+
+### Summary of findings
+- DEM 30 m is **too coarse** to express the microtopography of 10–20 m mounds.  
+- Hillshade and TPI (7×7 window) produce **no detectable signal**.  
+- NDVI sometimes shows **weak vegetation anomalies**, but these are **not 
+diagnostic** and produce many false positives.  
+- A practical detection pipeline would require:
+  - DEM ≤ 2 m (LIDAR),  
+  - or RGB imagery ≤ 1 m (e.g., Maxar, Google),  
+  - or high-resolution SAR.
+
+This negative result is **scientifically valuable**:  
+it shows the real limits of open EO datasets and prevents unrealistic expectations.
+
+## About the private PoC repository
+Development occurs in a private repository where:
+- real coordinates are stored (never published here),  
+- full rasters are processed,  
+- experiments and intermediate failures are documented.
+
+Periodic **sanitized public releases** will be exported here, containing:
+- methodology,  
+- scripts,  
+- synthetic or jittered examples,  
+- insights and lessons learned.
+
+## Next public release planned
+- **PoC 1 sanitized release** containing:
+  - pipeline description,  
+  - reproducible code (no real coordinates),  
+  - summary of analyses T001–T007,  
+  - limitations and recommended next steps.
+
